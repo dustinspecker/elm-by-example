@@ -9,7 +9,16 @@ import Maybe exposing (withDefault)
 
 color : Int -> Color.Color
 color n =
-  let colors = [ red, orange, yellow, green, blue, red, purple, brown ]
+  let colors =
+    [ red
+    , orange
+    , yellow
+    , green
+    , blue
+    , red
+    , purple
+    , brown
+    ]
   in
     drop (n % (length colors)) colors
       |> head
